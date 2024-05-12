@@ -44,9 +44,16 @@ section.imagem {
     color: white;
 }
 
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.348);
+    width: 400px;
+}
+
 section {
+    line-height: 30px;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    padding-left: 30px;
 }
 
 footer {
