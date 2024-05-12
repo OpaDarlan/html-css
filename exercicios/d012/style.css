@@ -39,6 +39,16 @@ section.normal {
     background-color: white;
 }
 
+section.imagem {
+    background-color: rgb(57, 57, 57);
+    color: white;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
 footer {
     background-color: black;
     color: white;
