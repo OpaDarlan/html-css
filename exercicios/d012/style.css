@@ -35,12 +35,6 @@ header a:hover {
     text-decoration: underline;
 }
 
-section.normal {
-    background-color: white;
-    color: black;
-    padding: 50px;
-}
-
 footer {
     background-color: black;
     color: white;
