@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: darkgray;
+            border-width: 1px 1px 0px 1px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0px;
+            background-color: darkolivegreen;
+        }
+
+        thead, tfoot {
+            background-color: darkolivegreen;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: darkgray;
+        }
+
+        td.numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População por estado</caption>
+        <thead>
+            <tr>
+                <th scope="col">estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">10 000 500</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">50 000 400</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">20 000 100</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="numero">25 000 500</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">14 000 500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td><strong>50000000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
